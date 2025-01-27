@@ -59,12 +59,12 @@ function FormCategoria() {
 
     return (
         <div className="container flex flex-col items-center justify-center mx-auto py-8">
-            <h1 className="text-4xl text-center my-8 font-semibold text-emerald-600">
+            <h1 className="text-4xl text-center my-8 font-major-mono text-emerald-600">
                 {id === undefined ? 'Cadastrar Tema' : 'Editar Tema'}
             </h1>
 
             <form className="w-1/2 flex flex-col gap-4" onSubmit={gerarNovaCategoria}>
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2 font-major-mono">
                     <label htmlFor="descricao" className="text-xl text-emerald-600 font-semibold">Descrição da Categoria</label>
                     <input
                         type="text"
@@ -76,7 +76,7 @@ function FormCategoria() {
                     />
                 </div>
                 <button
-                    className="rounded text-white bg-emerald-500 hover:bg-emerald-700 w-1/2 py-2 mx-auto flex justify-center transition-colors"
+                    className="rounded text-white font-major-mono bg-emerald-500 hover:bg-emerald-700 w-1/2 py-2 mx-auto flex justify-center transition-colors"
                     type="submit"
                 >
                     {isLoading ?
