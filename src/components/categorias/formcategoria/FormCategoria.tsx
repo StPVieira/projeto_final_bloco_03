@@ -60,7 +60,7 @@ function FormCategoria() {
     return (
         <div className="container flex flex-col items-center justify-center mx-auto py-8">
             <h1 className="text-4xl text-center my-8 font-major-mono text-emerald-600">
-                {id === undefined ? 'Cadastrar Tema' : 'Editar Tema'}
+                {id === undefined ? 'Cadastrar Categoria' : 'Editar Categoria'}
             </h1>
 
             <form className="w-1/2 flex flex-col gap-4" onSubmit={gerarNovaCategoria}>
@@ -68,7 +68,7 @@ function FormCategoria() {
                     <label htmlFor="descricao" className="text-xl text-emerald-600 font-semibold">Descrição da Categoria</label>
                     <input
                         type="text"
-                        placeholder="Descreva aqui seu tema"
+                        placeholder="Descreva aqui sua categoria"
                         name="descricao"
                         className="border-2 border-emerald-400 rounded p-3 text-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
                         value={categoria.descricao}
